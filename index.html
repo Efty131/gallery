@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta type="description" content="This is my gallery testing purposes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Efty's Gallery</title>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="img/1.jpg" id="fullImg">
+        <span onclick="closeFullImg()"><i class="fas fa-times"></i></span>
+    </div>
+    <div class="text-area">
+        <div class="text">
+            <h1>Gallery</h1>
+        </div>
+        <div class="icon">
+            <button onclick="toggle()"><i class="fas fa-cloud-moon"></i></button>
+        </div>
+    </div>
+    <div class="img-gallery">
+        <img src="img/1.jpg" onclick="openFullImg(this.src)">
+        <img src="img/2.jpg" onclick="openFullImg(this.src)">
+        <img src="img/3.jpg" onclick="openFullImg(this.src)">
+        <img src="img/4.jpg" onclick="openFullImg(this.src)">
+        <img src="img/5.jpg" onclick="openFullImg(this.src)">
+        <img src="img/6.jpg" onclick="openFullImg(this.src)">
+        <img src="img/7.jpg" onclick="openFullImg(this.src)">
+        <img src="img/8.jpg" onclick="openFullImg(this.src)">
+        <img src="img/9.jpg" onclick="openFullImg(this.src)">
+        <img src="img/10.jpg" onclick="openFullImg(this.src)">
+    </div>
+</body>
+
+</html>
