@@ -1,86 +1,152 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
-body{
+
+body {
     background: #2e8d86;
 }
-.container{
+
+.container {
     width: 80%;
     margin: 80px auto;
 }
-.container h1{
+
+.container h1 {
     padding: 60px 0;
     color: #fff;
     text-align: center;
     font-size: 44px;
 }
-.row{
+
+.main-video {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
-.col{
-    flex-basis: 50%;
+
+.video {
+    flex-basis: 70%;
     min-width: 250px;
 }
-.feature-img{
+
+.col2 {
+    flex-basis: 30%;
+    min-width: 250px;
+    background: #fff;
+    height: 100vh;
+    border-radius: 6px;
+    overflow-y: scroll;
+}
+
+.feature-img {
     width: 85%;
     margin: auto;
     position: relative;
     border-radius: 6px;
     overflow: hidden;
+    margin-bottom: 300px;
 }
-.big-img{
-   width: 100%;
+
+.big-img {
+    width: 100%;
 }
-.small-img-row{
+
+.small-img-row {
     display: flex;
     background: #efefef;
-    margin: 20px 0;
+    margin: 0px 0;
     align-items: center;
-    border-radius: 6px;
+    border-radius: 0px;
     overflow: hidden;
-    width: 85%;
+    width: 100%;
 }
-.small-img{
+
+.small-img {
     position: relative;
 }
-.small-img img{
+
+.small-img img {
     width: 150px;
+    margin-bottom: -5px;
 }
-.small-img-row p{
+
+.small-img-row:hover {
+    background: #2e8d86;
+}
+
+.small-img-row:hover p {
+    color: #fff;
+}
+
+.small-img-row p {
     margin-left: 20px;
     color: #707070;
     line-height: 22px;
     font-size: 15px;
 }
-.play-btn{
+
+.play-btn {
     width: 60px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     cursor: pointer;
 }
-.small-img .play-btn{
+
+.small-img .play-btn {
     width: 35px;
 }
-.video-player{
+
+.video-player {
     width: 80%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: none;
 }
-video:focus{
-    outline: none;
-}
-.close-btn{
+
+.close-btn {
     position: absolute;
     width: 30px;
     right: 10px;
     top: 10px;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    * {
+        overflow: scroll;
+    }
+
+    .main-video {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature-img {
+        width: 100%;
+        margin: auto;
+        position: relative;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .col2 {
+
+        width: 80%;
+        background: #fff;
+        height: auto;
+        border-radius: 6px;
+        overflow-y: scroll;
+    }
 }

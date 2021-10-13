@@ -1,55 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Efty's Video</title>
     <link rel="stylesheet" href="video.css">
     <script defer src="video.js"></script>
 </head>
+
 <body>
-<div class="container">
-    <h1>Video Gallery</h1>
-    <div class="row">
-        <div class="col">
-            <div class="feature-img">
-                <img src="img/feature.png" class="big-img">
-                <img src="img/play.png" class="play-btn" onclick="playVideo('video/1.mp4')">
-            </div>
-        </div>
-        <div class="col">
-            <div class="small-img-row">
-                <div class="small-img">
-                    <img src="img/pic2.png">
-                    <img src="img/play.png" class="play-btn" onclick="playVideo('video/2.mp4')">
+    <div class="container">
+
+        <div class="main-video">
+            <div class="video">
+                <div class="feature-img">
+                    <img src="img/feature.png" class="big-img">
+                    <img src="img/play.png" class="play-btn" onclick="playVideo('video/1.mp4')">
                 </div>
-                <P>Video Title Here</P>
             </div>
-            <div class="small-img-row">
-                <div class="small-img">
-                    <img src="img/pic3.png">
-                    <img src="img/play.png" class="play-btn" onclick="playVideo('video/3.mp4')">
+            <div class="col2">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="img/pic2.png">
+                        <img src="img/play.png" class="play-btn" onclick="playVideo('video/2.mp4')">
+                    </div>
+                    <P>Video Title Here</P>
                 </div>
-                <P>Video Title Here</P>
-            </div>
-            <div class="small-img-row">
-                <div class="small-img">
-                    <img src="img/pic4.png">
-                    <img src="img/play.png" class="play-btn" onclick="playVideo('video/4.mp4')">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="img/pic3.png">
+                        <img src="img/play.png" class="play-btn" onclick="playVideo('video/3.mp4')">
+                    </div>
+                    <P>Video Title Here</P>
                 </div>
-                <P>Video Title Here</P>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="img/pic4.png">
+                        <img src="img/play.png" class="play-btn" onclick="playVideo('video/4.mp4')">
+                    </div>
+                    <P>Video Title Here</P>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="img/pic4.png">
+                        <img src="img/play.png" class="play-btn" onclick="playVideo('video/4.mp4')">
+                    </div>
+                    <P>Video Title Here</P>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="img/pic4.png">
+                        <img src="img/play.png" class="play-btn" onclick="playVideo('video/4.mp4')">
+                    </div>
+                    <P>Video Title Here</P>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="img/pic3.png">
+                        <img src="img/play.png" class="play-btn" onclick="playVideo('video/4.mp4')">
+                    </div>
+                    <P>Video Title Here</P>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="img/pic4.png">
+                        <img src="img/play.png" class="play-btn" onclick="playVideo('video/4.mp4')">
+                    </div>
+                    <P>Video Title Here</P>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="img/pic4.png">
+                        <img src="img/play.png" class="play-btn" onclick="playVideo('video/4.mp4')">
+                    </div>
+                    <P>Video Title Here</P>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="img/pic3.png">
+                        <img src="img/play.png" class="play-btn" onclick="playVideo('video/4.mp4')">
+                    </div>
+                    <P>Video Title Here</P>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="video-player" id="videoPlayer">
-    <video width="100%" controls autoplay>
-        <source src="video/3.mp4" type="video/mp4" id="myVideo">
-    </video>
-    <img src="img/close.png" class="close-btn" onclick="stopVideo()">
-</div>
-    
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="video/1.mp4" type="video/mp4">
+        </video>
+        <img src="img/close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+
 </body>
+
 </html>
