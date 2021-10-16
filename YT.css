@@ -67,6 +67,25 @@ body{
     width: 100px;
     border-radius: 5px;
 }
+.pages{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+}
+.pages a{
+    text-decoration: none;
+    font-weight: bolder;
+    margin-left: 20px;
+    background-color: rgb(121, 195, 238);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+.pages a:hover{
+    color:rgb(121, 195, 238);
+    background-color: white;
+}
 @media (max-width: 991px){
     .container{
         grid-template-columns: 1.5fr 1fr;
